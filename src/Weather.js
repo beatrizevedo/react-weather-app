@@ -6,7 +6,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <input type="search" placeholder="Enter your city" />
+        <input type="search" placeholder=" Enter your city" />
         <input type="submit" value="Search" />
       </form>
       <img src={icon} alt="weather-icon" />
