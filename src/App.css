@@ -1,0 +1,18 @@
+.App {
+  background: rgb(0, 109, 178);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 109, 178, 1) 35%,
+    rgba(20, 135, 207, 1) 100%
+  );
+}
+.App footer {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.App a {
+  color: white;
+}
