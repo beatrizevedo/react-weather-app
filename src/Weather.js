@@ -8,10 +8,14 @@ export default function Weather() {
   let [temperature, setTemperature] = useState('');
   let [conditions, setConditions] = useState('');
   let [date, setDate] = useState('');
+  let [iconUrl, setIconUrl] = useState('');
 
   function showWeather(response) {
     setTemperature(response.data.temperature.current);
     setConditions(response.data.condition.description);
+    setIconUrl(
+      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
   }
 
   function updateWeather(event) {
@@ -36,7 +40,7 @@ export default function Weather() {
         />
         <input type="submit" value="Search" className="submit-button" />
       </form>
-      <img src={icon} alt="weather-icon" />
+      <img src={iconUrl} alt="weather-icon" />
       <h1>{city}</h1>
       <h2>Sunday</h2>
       <h3>{Math.round(temperature)}ºC</h3>
