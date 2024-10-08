@@ -60,15 +60,16 @@ export default function Weather() {
     let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiURL).then(showWeather);
 
-    return;
-    <Oval
-      visible={true}
-      height="80"
-      width="80"
-      color="#ffdb26"
-      ariaLabel="oval-loading"
-      wrapperStyle={{}}
-      wrapperClass=""
-    />;
+    return (
+      <Oval
+        visible={true}
+        height="80"
+        width="80"
+        color="#ffdb26"
+        ariaLabel="oval-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    );
   }
 }

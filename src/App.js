@@ -8,13 +8,18 @@ export default function App() {
         <Weather />
         <footer>
           This project was coded by{' '}
-          <a href="https://github.com/beatrizevedo" target="_blank">
+          <a
+            href="https://github.com/beatrizevedo"
+            target="_blank"
+            rel="noreferrer"
+          >
             Beatriz Azevedo
           </a>
           . It's open-sourced on{' '}
           <a
             href="https://github.com/beatrizevedo/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             Github
           </a>
@@ -22,6 +27,7 @@ export default function App() {
           <a
             href="https://beatriz-weather-app-react.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             Netlify
           </a>
